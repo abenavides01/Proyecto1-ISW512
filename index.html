@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventones Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="aventones-logo.png" alt="Aventones Logo" class="logo">
+            <button class="google-login">Sign in with Google</button>
+            <p class="or">Or</p>
+            <form action="/login" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="register">Not an user? <a href="/register">Register Now</a></p>
+        </div>
+    </div>
+    <footer>
+        <a href="/home">Home</a>
+        <a href="/rides">Rides</a>
+        <a href="/bookings">Bookings</a>
+        <a href="/settings">Settings</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+</html>
