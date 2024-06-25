@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrea Benavides Zúñiga">
+    <title>Registro de Usuario - Aventones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <img src="aventones-logo.png" alt="Aventones Logo" class="logo">
+            <h2>User Registration</h2>
+            <form action="/register" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="costa-rica">Costa Rica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <button type="submit">Sign up</button>
+            </form>
+            <p class="login">Already an user? <a href="index.html">Login here</a></p>
+            <p class="login">Register as driver? <a href="driver-register.html">Click here</a></p>
+        </div>
+    </div>
+    <footer>
+        <a href="/home">Home</a>
+        <a href="/rides">Rides</a>
+        <a href="/bookings">Bookings</a>
+        <a href="/settings">Settings</a>
+        <a href="index.html">Login</a>
+        <a href="user-register.html">Register</a>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+
+</html>

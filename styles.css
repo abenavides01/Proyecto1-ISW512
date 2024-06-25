@@ -1,106 +1,276 @@
+:root {
+  --font-family: Arial, sans-serif;
+  --background-color: #f4f4f4;
+  --box-background-color: #fff;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --primary-color: #73c527;
+  --primary-text-color: rgb(0, 0, 0);
+  --secondary-text-color: #333;
+  --footer-background-color: #000000;
+  --footer-text-color: #000000;
+  --footer-link-color: #73c527;
+  --input-border-color: #ccc;
+  --link-color: #73c527;
+  --or-text-color: #000000;
+  --button-hover-bg-color: #5ea91f;
+  --button-hover-text-color: #fff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  max-width: 600px;
+  margin: 20px;
 }
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.login-container,
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  /* Ajusta el ancho del contenedor */
+  height: auto;
+  max-width: 600px;
+  margin: 20px;
+  /* Añadir margen para evitar que se corte la imagen del logo */
 }
 
-.login-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+.login-box,
+.register-box {
+  background-color: var(--box-background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 1%;
+  width: 500px;
+  text-align: center;
 }
+
+
 
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 80%;
+  height: auto;
 }
 
 .google-login {
-    background-color: #4285F4;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .or {
-    margin: 10px 0;
-    color: #666;
+  margin: 10px 0;
+  color: var(--or-text-color);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
 }
 
 label {
-    text-align: left;
-    margin-bottom: 5px;
-    color: #333;
+  text-align: left;
+  margin-bottom: 5px;
+  color: var(--secondary-text-color);
 }
 
-input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 button[type="submit"] {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
 }
 
 .register {
-    margin-top: 15px;
-    color: #666;
+  margin-top: 15px;
+  color: var(--footer-text-color);
 }
 
 .register a {
-    color: #007BFF;
-    text-decoration: none;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 footer {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-    color: #666;
-    font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: var(--footer-text-color);
+  color: var(--footer-text-color);
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 footer a {
-    margin: 0 10px;
-    color: #007BFF;
-    text-decoration: none;
+  margin: 0 10px;
+  color: var(--footer-link-color);
+  text-decoration: none;
 }
 
 footer p {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+/*Estilo del botón google*/
+.gsi-material-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #f2f2f2;
+  background-image: none;
+  border: none;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: min-content;
+  margin: 0 auto;
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.gsi-material-button .gsi-material-button-contents {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.gsi-material-button .gsi-material-button-state {
+  -webkit-transition: opacity .218s;
+  transition: opacity .218s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gsi-material-button:disabled {
+  cursor: default;
+  background-color: #ffffff61;
+}
+
+.gsi-material-button:disabled .gsi-material-button-state {
+  background-color: #1f1f1f1f;
+}
+
+.gsi-material-button:disabled .gsi-material-button-contents {
+  opacity: 38%;
+}
+
+.gsi-material-button:disabled .gsi-material-button-icon {
+  opacity: 38%;
+}
+
+.gsi-material-button:not(:disabled):active .gsi-material-button-state,
+.gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+  background-color: #001d35;
+  opacity: 12%;
+}
+
+.gsi-material-button:not(:disabled):hover {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.gsi-material-button:not(:disabled):hover .gsi-material-button-state {
+  background-color: #001d35;
+  opacity: 8%;
 }
