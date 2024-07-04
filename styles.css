@@ -26,7 +26,7 @@ body {
   width: 90%;
   height: auto;
   max-width: 600px;
-  margin: 20px;
+  margin: 0;
 }
 
 .login-container,
@@ -36,11 +36,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  /* Ajusta el ancho del contenedor */
-  height: auto;
   max-width: 600px;
-  margin: 20px;
-  /* Añadir margen para evitar que se corte la imagen del logo */
+  margin: 0 auto;
 }
 
 .login-box,
@@ -49,8 +46,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  width: 1%;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -142,15 +139,13 @@ button[type="submit"]:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 10px;
   text-align: center;
   width: 100%;
-  color: var(--footer-text-color);
   color: var(--footer-text-color);
   font-size: 14px;
   padding: 10px;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 
 footer a {
