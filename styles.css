@@ -105,7 +105,7 @@ label {
   color: var(--secondary-text-color);
 }
 
-label.full-with {
+label.full-width {
   width: 100%; /* ancho completo para los labels email y address */
 }
 
