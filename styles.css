@@ -105,6 +105,10 @@ label {
   color: var(--secondary-text-color);
 }
 
+label.full-with {
+  width: 100%; /* ancho completo para los labels email y address */
+}
+
 input,
 select {
   padding: 10px;
