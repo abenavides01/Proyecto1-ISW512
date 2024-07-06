@@ -99,14 +99,14 @@ form {
   width: 48%;
 }
 
+.full-width {
+  width: 100%;
+}
+
 label {
   text-align: left;
   margin-bottom: 5px;
   color: var(--secondary-text-color);
-}
-
-label.full-width {
-  width: 100%; /* ancho completo para los labels email y address */
 }
 
 input,
