@@ -5,7 +5,7 @@
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   --primary-color: #73c527;
   --primary-text-color: rgb(0, 0, 0);
-  --secondary-text-color: #333;
+  --secondary-text-color: #08a710;
   --footer-background-color: #000000;
   --footer-text-color: #000000;
   --footer-link-color: #73c527;
@@ -27,6 +27,11 @@ body {
   height: auto;
   max-width: 600px;
   margin: 20px;
+}
+
+h1 {
+  font-family: var(--font-family);
+  color: var(--secondary-text-color);
 }
 
 .login-container,
@@ -53,8 +58,6 @@ body {
   width: 500px;
   text-align: center;
 }
-
-
 
 .logo {
   display: block;
