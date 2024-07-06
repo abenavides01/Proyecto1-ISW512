@@ -11,7 +11,6 @@
   --footer-link-color: #73c527;
   --input-border-color: #ccc;
   --link-color: #73c527;
-  --or-text-color: #000000;
   --button-hover-bg-color: #5ea91f;
   --button-hover-text-color: #fff;
 }
@@ -80,7 +79,7 @@ h1 {
 
 .or {
   margin: 10px 0;
-  color: var(--or-text-color);
+  color: var(--secondary-text-color);
 }
 
 form {
