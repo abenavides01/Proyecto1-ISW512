@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventones - My Rides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="#" class="regresar"></a>
+            <img src="aventones-logo.png" alt="Aventones Logo" class="logo-rides">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Rides</a></li>
+                <li><a href="#">Bookings</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button><img src="user-icon.png" alt="User Icon"></button>
+            </div>
+        </nav>
+        
+    </header>  
+    <main>
+        <h1>My Rides</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Seats</th>
+                    <th>Car</th>
+                    <th>Fee</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Quesada</a></td>
+                    <td>Alajuela</td>
+                    <td>2</td>
+                    <td>Nissan Pathfinder 2015</td>
+                    <td>$5</td>
+                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Quesada</a></td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Toyota Corolla 2020</td>
+                    <td>$10</td>
+                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Aguas Zarcas</a></td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Ford Festiva 1990</td>
+                    <td>--</td>
+                    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="new-ride-button">New Ride</button>
+    </main>
+</body>
+
+</html>
