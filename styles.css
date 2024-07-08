@@ -140,6 +140,85 @@ main {
   flex: 1;
 }
 
+.new-ride-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ride-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  padding: 10px 20px;
+}
+
+.ride-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ride-group label {
+  flex: 1 0 20%;
+  margin-right: 10px;
+}
+
+.ride-group input,
+.ride-group select {
+  flex: 1 0 25%;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ride-group-days {
+  display: flex;
+  flex-direction: column;
+}
+
+.ride-group-days label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.vehicle-details {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.vehicle-details legend {
+  font-weight: bold;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions a,
+.form-actions button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-actions .cancel {
+  color: #555;
+}
+
+.form-actions .create {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 h1 {
   font-size: 2em;
   color: var(--secondary-text-color);
