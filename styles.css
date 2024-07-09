@@ -158,9 +158,13 @@ main {
 }
 
 .ride-group {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
+  flex: 1 0 45%;
+  margin-bottom: 20px;
+}
+
+.ride-bottom .ride-group {
+  flex: 1 0 30%;
+  margin-bottom: 10px;
 }
 
 .ride-group label {
