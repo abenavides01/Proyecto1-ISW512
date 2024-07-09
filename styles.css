@@ -132,6 +132,42 @@ nav ul li a.active {
     height: 24px;
 }
 
+.search-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.search-container .dropdown .dropbtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.search-container .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.search-container .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.search-container .dropdown .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.search-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 main {
   width: 90%;
   max-width: 1200px;
@@ -408,6 +444,20 @@ select {
 .register a {
   color: var(--link-color);
   text-decoration: none;
+}
+
+.ride-info p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }
 
 footer {
