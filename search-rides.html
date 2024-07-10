@@ -16,14 +16,21 @@
         <div class="header-bottom">
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Rides</a></li>
-                    <li><a href="#">Bookings</a></li>
+                    <li><a href="search-rides.html" class="active">Home</a></li>
+                    <li><a href="my-rides.html">Rides</a></li>
+                    <li><a href="view-bookins.html">Bookings</a></li>
                 </ul>
             </nav>
             <div class="search-container">
                 <input type="text" placeholder="Search...">
                 <button><img src="user-icon.png" alt="User Icon"></button>
+                <div class="dropdown">
+                    <button class="dropbtn">Settings</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Logout</a>
+                        <a href="settings-edit-profile.html">Settings</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -43,7 +50,7 @@
                         <option value="Zarcero">Zarcero</option>
                     </select>
                 </div>
-                <button type="submit" class="create" >Find rides</button>
+                <a href="my-rides.html" class="button">Find Rides</a>
             </div>
             <div class="ride-group-days">
                 <label>Days</label>
@@ -72,7 +79,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> barroyo</td>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> abenavides</td>
                     <td>Quesada</td>
                     <td>Alajuela</td>
                     <td>2</td>
@@ -81,7 +88,7 @@
                     <td><a href="#" class="request">Request</a></td>
                 </tr>
                 <tr>
-                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> barroyo</td>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> abenavides</td>
                     <td>Quesada</td>
                     <td>Naranjo</td>
                     <td>1</td>
@@ -90,7 +97,7 @@
                     <td><a href="#" class="request">Request</a></td>
                 </tr>
                 <tr>
-                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> yluna</td>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> barroyo</td>
                     <td>Aguas Zarcas</td>
                     <td>Naranjo</td>
                     <td>1</td>
@@ -105,12 +112,12 @@
         </div>
     </main>
     <footer>
-        <a href="#">Home</a>
-        <a href="#">Rides</a>
-        <a href="#">Bookings</a>
-        <a href="#">Settings</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+        <a href="search-rides.html">Home</a>
+        <a href="my-rides.html">Rides</a>
+        <a href="view-bookins.html">Bookings</a>
+        <a href="settings-edit-profile.html">Settings</a>
+        <a href="index.html">Login</a>
+        <a href="user-register.html">Register</a>
         <p>&copy; Aventones.com</p>
     </footer>
 </body>

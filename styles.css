@@ -1,3 +1,4 @@
+/* Definición de variables para temas de color y estilos */
 :root {
   --font-family: Arial, sans-serif;
   --background-color: #f4f4f4;
@@ -17,6 +18,7 @@
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo general del cuerpo */
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
@@ -26,6 +28,7 @@ body {
   min-height: 100vh
 }
 
+/* Estilo del encabezado */
 header {
   width: 100%;
   text-align: center;
@@ -37,6 +40,7 @@ header {
   z-index: 1000;
 }
 
+/* Encabezado superior con logo */
 .header-top {
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@ header {
   position: relative;
 }
 
+/* Encabezado inferior con navegación y barra de búsqueda */
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -52,6 +57,7 @@ header {
   padding: 10px 20px;
 }
 
+/* Contenedor del logo */
 .logo-container {
   display: flex;
   align-items: center;
@@ -61,6 +67,7 @@ header {
   height: 50px;
 }
 
+/* Botón de regresar */
 .regresar {
   text-decoration: none;
   color: #000000;
@@ -85,11 +92,12 @@ header {
   -webkit-transform: rotate(135deg);
 }
 
+/* Estilo de la navegación */
 nav {
     flex: 1;
 }
 
-nav ul {
+.header-bottom nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -97,20 +105,21 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
+.header-bottom nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a {
+.header-bottom nav ul li a {
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: bold;
 }
 
-nav ul li a.active {
+.header-bottom nav ul li a.active {
     color: var(--primary-color);
 }
 
+/* Contenedor de la búsqueda */
 .search-container {
     display: flex;
     align-items: center;
@@ -132,6 +141,7 @@ nav ul li a.active {
     height: 24px;
 }
 
+/* Dropdown del contenedor de búsqueda */
 .search-container .dropdown {
   position: relative;
   display: inline-block;
@@ -168,6 +178,7 @@ nav ul li a.active {
   display: block;
 }
 
+/* Estilo principal */
 main {
   width: 90%;
   max-width: 1200px;
@@ -196,6 +207,7 @@ main h1::after {
   left: 0;
 }
 
+/* Formulario de nueva búsqueda */
 .new-ride-form {
   max-width: 800px;
   margin: 0 auto;
@@ -205,6 +217,7 @@ main h1::after {
   border-radius: 5px;
 }
 
+/* Contenedor inferior de la búsqueda */
 .ride-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -305,6 +318,7 @@ h1 {
   color: var(--secondary-text-color);
 }
 
+/* Estilo de la tabla */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -331,6 +345,7 @@ table td a:hover {
   text-decoration: underline;
 }
 
+/* Botón de nueva búsqueda */
 .new-ride-button {
   background-color: var(--primary-color);
   color: #fff;
@@ -372,6 +387,7 @@ table td a:hover {
   width: 800px;
 }
 
+/* Estilo del logo */
 .logo {
   display: block;
   margin: 0 auto 20px auto;
@@ -379,6 +395,7 @@ table td a:hover {
   height: auto;
 }
 
+/* Botón de inicio de sesión con Google */
 .google-login {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
@@ -391,11 +408,13 @@ table td a:hover {
   margin-bottom: 10px;
 }
 
+/* Separador */
 .or {
   margin: 10px 0;
   color: var(--secondary-text-color);
 }
 
+/* Estilo general de formularios */
 form {
   display: flex;
   flex-direction: column;
@@ -435,6 +454,7 @@ select {
   box-sizing: border-box;
 }
 
+/* Botón general */
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -460,6 +480,7 @@ select {
   transform: translateY(2px);
 }
 
+/* Estilo de registro */
 .register {
   margin-top: 15px;
   color: var(--footer-text-color);
@@ -484,6 +505,17 @@ select {
   width: 80px;
 }
 
+/* Estilo del mapa */
+.map {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.map img {
+  width: 100%;
+}
+
+/* Estilo del pie de página */
 footer {
   text-align: center;
   width: 100%;
