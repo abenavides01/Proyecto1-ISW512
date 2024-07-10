@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventones - Search rides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="aventones-logo.png" alt="Aventones Logo" class="logo-rides">
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Rides</a></li>
+                    <li><a href="#">Bookings</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button><img src="user-icon.png" alt="User Icon"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Search rides</h1>
+        <form class="search-form">
+            <div class="ride-bottom">
+                <div class="ride-group">
+                    <label for="from">From</label>
+                    <select id="from" name="from">
+                        <option value="Quesada">Quesada</option>
+                    </select>
+                </div>
+                <div class="ride-group">
+                    <label for="to">To</label>
+                    <select id="to" name="to">
+                        <option value="Zarcero">Zarcero</option>
+                    </select>
+                </div>
+                <button type="submit" class="create" >Find rides</button>
+            </div>
+            <div class="ride-group-days">
+                <label>Days</label>
+                <div>
+                    <label><input type="checkbox" name="days" value="mon" checked> Mon</label>
+                    <label><input type="checkbox" name="days" value="tue"> Tue</label>
+                    <label><input type="checkbox" name="days" value="wed" checked> Wed</label>
+                    <label><input type="checkbox" name="days" value="thu"> Thu</label>
+                    <label><input type="checkbox" name="days" value="fri" checked> Fri</label>
+                    <label><input type="checkbox" name="days" value="sat"> Sat</label>
+                    <label><input type="checkbox" name="days" value="sun"> Sun</label>
+                </div>
+            </div>
+        </form>
+        <table class="rides-table">
+            <thead>
+                <tr>
+                    <th>Driver</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Seats</th>
+                    <th>Car</th>
+                    <th>Fee</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> barroyo</td>
+                    <td>Quesada</td>
+                    <td>Alajuela</td>
+                    <td>2</td>
+                    <td>Nissan Pathfinder 2015</td>
+                    <td>$5</td>
+                    <td><a href="#" class="request">Request</a></td>
+                </tr>
+                <tr>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> barroyo</td>
+                    <td>Quesada</td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Toyota Corolla 2020</td>
+                    <td>$10</td>
+                    <td><a href="#" class="request">Request</a></td>
+                </tr>
+                <tr>
+                    <td><img src="user-icon.png" alt="User Icon" class="user-icon"> yluna</td>
+                    <td>Aguas Zarcas</td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Ford Festiva 1990</td>
+                    <td>$15</td>
+                    <td><a href="#" class="request">Request</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="map">
+            <img src="mapa.png.png" alt="Map">
+        </div>
+    </main>
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">Rides</a>
+        <a href="#">Bookings</a>
+        <a href="#">Settings</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+
+</html>
